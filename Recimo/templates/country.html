@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <li>Country: {{ country }}</li>
+    <li>Capital: {{ capital }}</li>
+    <li>Largest City: {{ large }}</li>
+    <li>Language: {{ language }}</li>
+
+    {% if country == 'India' %}
+    <li>Area: 3,287,263 km2</li>
+    {% elif country == 'United States' %}
+    <li>Area: 3,796,742 sq mi</li>
+    {% else %}
+    <li>Area: 312,696 km2</li>
+    {% endif %}
+
+    {% if country == 'India' %}
+    <li>Population: 1,375,586,000</li>
+    {% elif country == 'United States' %}
+    <li>Population:  331,893,745</li>
+    {% else %}
+    <li>Population: 38,036,118</li>
+    {% endif %}
+
+    {% if country == 'India' %}
+    <li>GDP Nominal: $3.469 trillion</li>
+    {% elif country == 'United States' %}
+    <li>GDP Nominal:  $25.035 trillion</li>
+    {% else %}
+    <li>GDP Nominal: $716.3 billion</li>
+    {% endif %}
+
+
+</body>
+
+</html>
